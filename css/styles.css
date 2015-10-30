@@ -1,49 +1,55 @@
+/* provide global settings here */
 body {
 	font-family: 'Lato', sans-serif;
 	color: #990000;
 	font-weight: 300;
 }
 
-.text-muted{
+/* Text styles */
+.text-muted {
 	color: #990000;
 	opacity: 0.5;
 }
 
-.text-thin{
+.text-thin {
 	font-weight: 100;
 }
 
-.text-thick{
+.text-thick {
 	font-weight: 300;
 }
 
-.title-super{
+.title-super {
 	font-size: 60px;
 	margin-top: 35px;
 }
 
-.title-logo{
+.title-logo {
 	margin-top: 40px;
 	margin-bottom: 20px;
 	width: 10%;
 }
 
-.line-style{
+/* provide settings for horizontal rule */
+.line-style {
 	height: 3px;
    	border: 0;
    	text-align: center;
    	background-color: #990000;
 }
 
-.main_image{
+/* provide style for main image */
+.main_image {
 	width: 80%;
 	margin-top: 10px;
 }
 
-.section-image{
+/* set width of section images */
+.section-image {
 	width: 100%;
 }
 
-.h2_no_top_margin{
+/* remove margin from the top of the main page image */
+.h2_no_top_margin {
 	margin-top: 0;
 }

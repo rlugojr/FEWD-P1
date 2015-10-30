@@ -1,71 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-	  <meta charset="utf-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <title>Ray Lugo's Portfolio</title>
-	  <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
-	  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	  <link rel="stylesheet" href="css/bootstrap.min.css">
-	  <link rel="stylesheet" href="css/styles.css">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- Set viewport for responsiveness -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ray Lugo's Portfolio</title>
+		<!-- Closest font that matches mockup loaded from Google fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
+		<!-- Load jQuery -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<!-- Load Bootstrap to leverage responsiveness -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Load my stylesheet -->
+		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
-	  	<div class="container">
-		    <div class="row">
-		      	<div class="col-md-6">
-			      	<a href=# data-toggle="tooltip" title="Lu-Go is Nihon-go for Dragon Speak!">
-			      		<img class="title-logo image-responsive" src="images/dragon-small.png" alt="Dragon Logo">
-			      	</a>
-		      	</div>
-			    <div class="col-md-6 text-right text-uppercase">
-				      <hgroup>
-				      	<h1 class="title-super text-thin">Ray Lugo</h1>
-				      	<h4 class="text-uppercase text-thick"><strong>Front-End Web developer</strong></h4>
-				      </hgroup>
-				  </div>   
-		    	</div>
-		    <div class="row">
-			    <div class="col-md-12 line-style">
-			    	<hr/>
-			    </div>
+		<div class="container">
+			<div class="row">
+				<!-- Section for Logo graphic with tooltip -->
+				<div class="col-md-6">
+					<a href="#" data-toggle="tooltip" title="Lu-Go is Nihon-go for Dragon Speak!">
+						<img class="title-logo image-responsive" src="images/dragon-small.png" alt="Dragon Logo">
+					</a>
+				</div>
+				<!-- Section for my name and title -->
+				<div class="col-md-6 text-right text-uppercase">
+					<h1 class="title-super text-thin">Ray Lugo</h1>
+					<h4 class="text-uppercase text-thick"><strong>Front-End Web developer</strong></h4>
+				</div>
 			</div>
+			<!-- Use header line to separate header info from main content -->
+			<div class="row">
+				<div class="col-md-12 line-style">
+					<hr>
+				</div>
+			</div>
+			<!-- Start of main content -->
 			<main>
 				<div class="row">
-					<div class="col-md-12 h2_no_top_margin" >
-						<a href=# data-toggle="tooltip" title="One of the most simple yet complex structures!">
-				    		<img class="img-responsive center-block main_image" src="images/mobius_strip_2-large_x2.png" alt="Mobius Strip">
-				    	</a>
-				    </div>
-				</div>	
-			    <article class="row" >
-			    	<header class="col-md-12">
-			    		<h2 class="text-muted">Featured Work</h2>
-			    	</header>
-			    	<section class="row text-center">
-			    		<section class="col-md-4">
-		    				<a href="http://codepen.io/rlugojr/pen/QjOaRq" data-toggle="tooltip" title="This one is ready!">
-		    					<img class="img-responsive section-image" src="images/working_latte-medium.jpg" alt="P0: About Me">
-		    				</a>
-			    			<h3 class="text-uppercase">P0: About Me</h3>
-			    			<p><a href="http://http://codepen.io/rlugojr/pen/QjOaRq">CodePen</a></p>
-			    		</section>
-			    		<section class="col-md-4">
-			    			<a href=# data-toggle="tooltip" title="This one is next!">
-			    				<img class="img-responsive section-image" src="images/coming_soon-medium.jpg" alt="P2: Online Resume">
-			    			</a>
-			    			<h3 class="text-uppercase">P2: Online Resume</h3>
-			    			<p>Coming Soon!</p>
-			    		</section>
-			    		<section class="col-md-4">
-			    			<a href=# data-toggle="tooltip" title="This one is notoriously difficult (But I will PREVAIL!)">
-			    				<img class="img-responsive section-image" src="images/coming_soon-medium.jpg" alt="P3: Classic Arcade Game">
-			    			</a>
-			    			<h3 class="text-uppercase">P3: Classic Arcade Game</h3>
-			    			<p>Coming Soon!</p>
-			    		</section>
-			    	</section>
-			    </article>
+					<!-- Display main section image with tooltip -->
+					<div class="col-md-12 h2_no_top_margin">
+						<a href="#" data-toggle="tooltip" title="One of the most simple yet complex structures!">
+							<img class="img-responsive center-block main_image" src="images/mobius_strip_2-medium.png" alt="Mobius Strip" srcset="images/mobius_strip_2-large.png 1953w, images/mobius_strip_2-large_x2.png 2500w, images/mobius_strip_2-medium.png 1563w, images/mobius_strip_2-small.png 320w" sizes="(min-width:36em) 33.3vw, 100vw">
+						</a>
+					</div>
+				</div>
+				<!-- Start article to contain the main content sections -->
+				<article class="row">
+					<h2 class="text-muted">Featured Work</h2>
+					<!-- First section with image links to project on CodePen with tooltip -->
+					<section class="col-md-4 text-center">
+						<h3 class="text-uppercase">P0: About Me</h3>
+						<!-- Added link to this project in CodePen -->
+						<a href="http://codepen.io/rlugojr/pen/QjOaRq" data-toggle="tooltip" title="This one is ready!">
+							<img class="img-responsive section-image" src="images/working_latte-medium.jpg" alt="P0: About Me" srcset="images/working_latte-large.jpg 800w, images/working_latte-large_x2.jpg 1024w, images/working_latte-medium.jpg 640w, images/working_latte-small.jpg 320w" sizes="(min-width:36em) 33.3vw, 100vw">
+						</a>
+						<h5><a href="http://http://codepen.io/rlugojr/pen/QjOaRq">CodePen</a></h5>
+					</section>
+					<!-- Second section will contain project image and link when it is completed -->
+					<section class="col-md-4 text-center">
+						<h3 class="text-uppercase">P2: Online Resume</h3>
+						<!-- TODO: Add link to this project when it is completed -->
+						<a href="#" data-toggle="tooltip" title="This one is next!">
+							<img class="img-responsive section-image" src="images/coming_soon-medium.jpg" alt="P2: Online Resume" srcset="images/coming_soon-large.jpg 800w, images/coming_soon-large_x2.jpg 1537w, images/coming_soon-medium.jpg 640w, images/coming_soon-small.jpg 320w" sizes="(min-width:36em) 33.3vw, 100vw">
+						</a>
+						<h5><a href='#'>Coming Soon!</a></h5>
+					</section>
+					<!-- Third section will contain project image and link when it is completed -->
+					<section class="col-md-4 text-center">
+						<h3 class="text-uppercase">P3: Arcade Game</h3>
+						<!-- TODO: Add link to this project when it is completed -->
+						<a href="#" data-toggle="tooltip" title="This one is notoriously difficult (But I will PREVAIL!)">
+							<img class="img-responsive section-image" src="images/coming_soon-medium.jpg" alt="P3: Classic Arcade Game" srcset="images/coming_soon-large.jpg 800w, images/coming_soon-large_x2.jpg 1537w, images/coming_soon-medium.jpg 640w, images/coming_soon-small.jpg 320w" sizes="(min-width:36em) 33.3vw, 100vw">
+						</a>
+						<h5><a href='#'>Coming Soon!</a></h5>
+					</section>
+				</article>
 			</main>
 		</div>
 	</body>
