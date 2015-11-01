@@ -1,8 +1,9 @@
 /* provide global settings here */
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: "Lato", sans-serif;
 	color: #990000;
 	font-weight: 300;
+	padding-top: 70px;
 }
 
 /* Text styles */
@@ -38,9 +39,14 @@ body {
    	background-color: #990000;
 }
 
+/* remove margin from the top of the main page image */
+.main-image-heading {
+	margin-top: 0;
+}
+
 /* provide style for main image */
 .main_image {
-	width: 80%;
+	width: 70%;
 	margin-top: 10px;
 }
 
@@ -49,7 +55,13 @@ body {
 	width: 100%;
 }
 
-/* remove margin from the top of the main page image */
-.h2_no_top_margin {
-	margin-top: 0;
+/* Override default Bootstrap CSS for Brand Icon */
+.navbar-brand {
+	padding-bottom: 5px;
+	padding-top: 6px;
+}
+
+/* Add space between "Main" and "Footer" */
+footer {
+	padding-top: 10px;
 }

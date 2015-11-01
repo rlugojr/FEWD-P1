@@ -6,16 +6,42 @@
 		<!-- Set viewport for responsiveness -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ray Lugo's Portfolio</title>
+		<!-- Add favicon -->
+		<link rel="icon" href="favicon.ico">
 		<!-- Closest font that matches mockup loaded from Google fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300">
-		<!-- Load jQuery -->
-		<script src="js/jquery-1.9.1.min.js"></script>
-		<!-- Load Bootstrap to leverage responsiveness -->
+		<!-- Load Bootstrap CSS to leverage responsiveness -->
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Load Hover to animate objects -->
+		<link rel="stylesheet" href="css/hover-min.css" media="all">
 		<!-- Load my stylesheet -->
 		<link rel="stylesheet" href="css/styles.css">
 	</head>
 	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#"><img src="images/dragon-button.png" alt="Brand Icon"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://codepen.io/rlugojr/pen/QjOaRq">P0: About Me</a></li>
+							<li><a href="#">P2: Online Resume</a></li>
+							<li><a href="#">P3: Arcade Game</a></li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 		<div class="container">
 			<div class="row">
 				<!-- Section for Logo graphic with tooltip -->
@@ -40,17 +66,18 @@
 			<main>
 				<div class="row">
 					<!-- Display main section image with tooltip -->
-					<div class="col-md-12 h2_no_top_margin">
+					<div class="col-md-12 main-image-heading">
 						<a href="#" data-toggle="tooltip" title="One of the most simple yet complex structures!">
 							<img class="img-responsive center-block main_image" src="images/mobius_strip_2-medium.png" alt="Mobius Strip" srcset="images/mobius_strip_2-large.png 1953w, images/mobius_strip_2-large_x2.png 2500w, images/mobius_strip_2-medium.png 1563w, images/mobius_strip_2-small.png 320w" sizes="(min-width:36em) 33.3vw, 100vw">
 						</a>
 					</div>
+					<div id="replaceThis" class="col-md-12"></div>
 				</div>
 				<!-- Start article to contain the main content sections -->
 				<article class="row">
 					<h2 class="text-muted">Featured Work</h2>
 					<!-- First section with image links to project on CodePen with tooltip -->
-					<section class="col-md-4 text-center">
+					<section class="col-md-4 text-center hvr-float-shadow">
 						<h3 class="text-uppercase">P0: About Me</h3>
 						<!-- Added link to this project in CodePen -->
 						<a href="http://codepen.io/rlugojr/pen/QjOaRq" data-toggle="tooltip" title="This one is ready!">
@@ -59,7 +86,7 @@
 						<h5><a href="http://http://codepen.io/rlugojr/pen/QjOaRq">CodePen</a></h5>
 					</section>
 					<!-- Second section will contain project image and link when it is completed -->
-					<section class="col-md-4 text-center">
+					<section class="col-md-4 text-center hvr-float-shadow">
 						<h3 class="text-uppercase">P2: Online Resume</h3>
 						<!-- TODO: Add link to this project when it is completed -->
 						<a href="#" data-toggle="tooltip" title="This one is next!">
@@ -68,7 +95,7 @@
 						<h5><a href='#'>Coming Soon!</a></h5>
 					</section>
 					<!-- Third section will contain project image and link when it is completed -->
-					<section class="col-md-4 text-center">
+					<section class="col-md-4 text-center hvr-float-shadow">
 						<h3 class="text-uppercase">P3: Arcade Game</h3>
 						<!-- TODO: Add link to this project when it is completed -->
 						<a href="#" data-toggle="tooltip" title="This one is notoriously difficult (But I will PREVAIL!)">
@@ -79,5 +106,12 @@
 				</article>
 			</main>
 		</div>
+		<footer>
+			<p class="col-md-12 text-center">&copy; 2015 RL Web Designs</p>
+		</footer>
+		<!-- Load jQuery -->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<!-- Load Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
